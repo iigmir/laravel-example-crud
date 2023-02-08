@@ -5,6 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
+/**
+ * Get standard response format.
+ * @param string $message
+ * @param null|array $content
+ * @return array
+ */
 function get_response($message = "No content", $content = null)
 {
     return array("message" => $message, "content" => $content);
