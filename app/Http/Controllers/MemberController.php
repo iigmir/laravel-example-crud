@@ -10,6 +10,7 @@ class MemberController extends Controller
     /**
      * Display a listing of the resource.
      *
+     * @see <https://stackoverflow.com/a/51650270>
      * @return \Illuminate\Http\Response
      */
     public function index()
