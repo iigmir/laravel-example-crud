@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\XkcdController;
+use App\Http\Controllers\MemberController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,3 +35,4 @@ Route::get("/", function () {
 });
 
 Route::resource( "/xkcd", XkcdController::class );
+Route::resource( "/member", MemberController::class );
