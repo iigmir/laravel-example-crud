@@ -57,9 +57,6 @@ class XkcdController extends Controller
             return response( get_response("ok", $ajax->json()), 200 );
         }
         return redirect()->action([XkcdController::class, "index"]);
-        // DLLM
-        // @see <https://stackoverflow.com/a/17861505>
-        // return $this->index();
     }
 
     /**
