@@ -20,8 +20,8 @@ return new class extends Migration
             $table->string("lastname");
             $table->string("email");
             // 0: other gender, 1: male, 2: female
-            $table->integer("gender");
-            $table->string("address");
+            $table->integer("gender")->comment("0: other gender, 1: male, 2: female");
+            $table->string("address")->nullable();
         });
     }
 

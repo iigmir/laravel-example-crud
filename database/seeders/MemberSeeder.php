@@ -7,8 +7,8 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 //
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
-use Illuminate\Support\Int;
+// use Illuminate\Support\Str;
+// use Illuminate\Support\Int;
 
 class MemberSeeder extends Seeder
 {
@@ -24,7 +24,7 @@ class MemberSeeder extends Seeder
             "lastname" => fake()->lastName(),
             "email" => fake()->unique()->email(),
             "gender" => rand(0, 2),
-            "address" => NULL,
+            "address" => fake()->address(),
         ]);
     }
 }
